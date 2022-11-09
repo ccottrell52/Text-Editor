@@ -26,5 +26,16 @@ warmStrategyCache({
 
 registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
-// TODO: Implement asset caching
-registerRoute();
+// Implement asset caching
+registerRoute(
+  ({ request }) => ['style', 'script', 'worker'].includes(request.destination),
+  // Adding CacheFirst feature for the index.html page. This caches the page and Falls back to the index.html so we can work offline.
+  new CacheFirst({
+    cacheName: 'asset-cache',
+    plugins: [
+      new offlineFallback({
+        pageFallback: '/index.html',
+      }),
+    ],
+  })
+);
