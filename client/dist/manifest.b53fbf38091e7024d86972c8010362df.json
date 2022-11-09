@@ -1,0 +1,41 @@
+{
+  "icons": [
+    {
+      "src": "./assets/icons/icon_512x512.1ea0c90f5c8a486223ae3a326d2791c9.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/icons/icon_384x384.f848c254b5bc01cd0fcac60b98d78235.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/icons/icon_256x256.e88deecec40692f96c10507517b50d7d.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/icons/icon_192x192.d70dab59a86bec46320b237c4feabfa3.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/icons/icon_128x128.67932cc77c9d335afab9f1afa91adf14.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/icons/icon_96x96.97a96e0fc4eb2a8bec3b8d49d90f1d14.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Just Another Text Editor",
+  "short_name": "J.A.T.E.",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "/",
+  "description": "A useful TextEditor",
+  "background_color": "#ffffff"
+}
